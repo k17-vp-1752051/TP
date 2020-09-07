@@ -5,7 +5,7 @@
     <div class="container"> 
         <div class="content"> 
             <div class="title">About Page</div> 
-            <div class="quote">!</div> 
+            <div class="quote">hihi!</div> 
         </div> 
     </div> 
 @endsection
