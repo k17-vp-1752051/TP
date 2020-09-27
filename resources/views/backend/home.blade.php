@@ -41,9 +41,9 @@
                             <div class="action-secondary">
                                 <i class="mdi-material-info"></i>
                             </div> 
-                            <h4 class="list-group-item-heading">Manage Posts</h4> 
-                                <a href="/admin/posts" class="btn btn-default btn-raised">All Posts</a> 
-                                <a href="/admin/posts/create" class="btn btn-primary btn-raised">Create A Post</a> 
+                            <h4 class="list-group-item-heading">Manage Reservation</h4> 
+                                <a href="/admin/posts" class="btn btn-default btn-raised">All Reservations</a> 
+                                <a href="/admin/posts/create" class="btn btn-primary btn-raised">Create A Reservation</a> 
                         </div> 
                     </div> 
                     <div class="list-group-separator"></div>
@@ -55,9 +55,9 @@
                             <div class="action-secondary"> 
                                 <i class="mdi-material-info"></i>
                             </div>
-                            <h4 class="list-group-item-heading">Manage Categories</h4>
-                            <a href="/admin/categories" class="btn btn-default btn-raised">All Categories</a> 
-                            <a href="/admin/categories/create" class="btn btn-primary btn-raised">New Category</a> 
+                            <h4 class="list-group-item-heading">Manage Restaurant</h4>
+                            <a href="/admin/categories" class="btn btn-default btn-raised">All Restaurants</a> 
+                            <a href="/admin/categories/create" class="btn btn-primary btn-raised">New Restaurant</a> 
                         </div> 
                     </div> 
                     <div class="list-group-separator"></div>

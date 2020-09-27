@@ -19,23 +19,25 @@
                 <input type="hidden" name="_token" value="{!! csrf_token() !!}">
 
                 <fieldset> 
-                    <legend>Create a new post</legend> 
+                    <legend>Make a reservation</legend> 
                     <div class="form-group">
-                        <label for="title" class="col-lg-2 control-label">Title</label>
+                        <label for="title" class="col-lg-2 control-label">How many people?</label>
                         <div class="col-lg-10">
-                            <input type="text" class="form-control" id="title" placeholder="Title" name="title"> 
+                            <!-- <input type="text" class="form-control" id="title" placeholder="Title" name="title">  -->
+                            <input type="number" name="quantity" min="1" max="50">
                         </div> 
                     </div>
 
                     <div class="form-group"> 
-                        <label for="content" class="col-lg-2 control-label">Content</label>
+                        <label for="content" class="col-lg-2 control-label">When for?</label>
                         <div class="col-lg-10"> 
-                            <textarea class="form-control" rows="3" id="content" name="content"></textarea> 
+                            <!-- <textarea class="form-control" rows="3" id="content" name="content"></textarea>  -->
+                            <input type="datetime-local" name="bdaytime">
                         </div> 
                     </div>
 
                     <div class="form-group"> 
-                    <label for="categories" class="col-lg-2 control-label">Categories</label>
+                    <label for="categories" class="col-lg-2 control-label">Where???</label>
                         
                         <div class="col-lg-10"> 
                         <select class="form-control" id="category" name="categories[]" multiple> 

@@ -6,15 +6,15 @@
         <div class="row banner">
             <div class="col-md-12">
                 <h1 class="text-center margin-top-100 editContent"> 
-                Learning Laravel 5 
+                K17 WIBU 
                 </h1>
                 <h3 class="text-center margin-top-100 editContent">
-                Building Practical Applications
+                Your meal is ready, make your decision now!
                 </h3>
                 <div class="text-center"> 
-                <img src="http://learninglaravel.net/img/LearningLaravel5_cover0.png" width="302" height="391" alt=""> 
+                <img src="https://media.istockphoto.com/vectors/food-design-vector-id485490223" width="472" height="405" alt="home"/> 
                 </div>
             </div>
         </div> 
     </div> 
- @endsection
+@endsection

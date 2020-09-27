@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 use App\Category;
-use App\Post;
+use App\Reservations;
 use Illuminate\Support\Str;
 
 use App\Http\Requests\PostFormRequest;
@@ -20,10 +20,10 @@ class PostsController extends Controller
     }
 
     public function store(PostFormRequest $request) { 
-        $post= new Post(array( 
-            'title' => $request->get('title'), 
-            'content' => $request->get('content'), 
-            'slug' => Str::slug($request->get('title'), '-'), 
+        $post= new Reservations(array( 
+            //'title' => $request->get('title'), 
+            //'content' => $request->get('content'), 
+            //'slug' => Str::slug($request->get('title'), '-'), 
         ));
         $post->save(); 
         $post->categories()->sync($request->get('categories'));
@@ -32,7 +32,7 @@ class PostsController extends Controller
     }
         
     public function index() { 
-        $posts = Post::all(); 
+        $posts = Reservations::all(); 
         return view('backend.posts.index', compact('posts')); 
     }
 
@@ -50,7 +50,6 @@ class PostsController extends Controller
         $post->slug = Str::slug($request->get('title'), '-');
         $post->save(); 
         $post->categories()->sync($request->get('categories'));
-        return redirect(action('Admin\PostsController@edit', $post->id))->with('status', 'The post has been updated!'); }
-        
-
+        return redirect(action('Admin\PostsController@edit', $post->id))->with('status', 'The post has been updated!'); 
+    }
 }

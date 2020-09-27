@@ -24,7 +24,6 @@ Route::get('/about', 'PagesController@about');
 // Route::get('/contact', 'PagesController@contact');
 Route::get('/contact', 'TicketsController@create');
 Route::post('/contact', 'TicketsController@store');
-
 Route::get('/tickets', 'TicketsController@index');
 Route::get('/tickets/{slug?}', 'TicketsController@show');
 Route::get('/ticket/{slug?}/edit','TicketsController@edit');
@@ -83,10 +82,10 @@ Route::group(array('prefix' => 'admin', 'namespace' => 'Admin', 'middleware' =>'
     Route::get('categories/create', 'CategoriesController@create'); 
     Route::post('categories/create', 'CategoriesController@store');
 
-    // Route::get('posts', 'PostsController@index');
-    // Route::get('posts/{id?}/edit', 'PostsController@edit'); 
-    // Route::post('posts/{id?}/edit','PostsController@update');
-
+    Route::get('posts', 'PostsController@index');
+    Route::get('posts/{id?}/edit', 'PostsController@edit'); 
+    Route::post('posts/{id?}/edit','PostsController@update');
+    //Route::get('/reservation', 'ReservationsController@index');
 });
 
 Route::get('posts', 'PostsController@index');
@@ -95,6 +94,8 @@ Route::post('posts/{id?}/edit','PostsController@update');
 
 Route::get('/blog', 'BlogController@index');
 Route::get('/blog/{slug?}', 'BlogController@show');
+
+
 
 
 
